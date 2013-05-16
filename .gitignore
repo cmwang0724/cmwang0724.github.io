@@ -1,0 +1,5 @@
+#filter directory
+_sit/
+
+#filter files
+*.bak
