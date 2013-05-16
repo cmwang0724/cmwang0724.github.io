@@ -2,7 +2,3 @@ safe: true
 lsi: false
 pygments: true
 timezone: Asia/Shanghai
-host: 192.168.121.130
-port: 4000
-baseurl: /
-url: http://192.168.121.130:4000
