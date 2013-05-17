@@ -1,5 +1,5 @@
 #file
-*.bak
+#*.bak
 
 #directory
 _site/
