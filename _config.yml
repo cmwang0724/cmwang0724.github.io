@@ -1,34 +1,4 @@
-safe: false
-auto: false
-server: false
-server_port: 4000
-pygments: true
-future: false
+safe: true
 lsi: false
-markdown: redcarpet
+pygments: true
 
-
-permalink: /notebook/:year/:month/:title
-pagination: 6
-url: http://danielgroves.net
-
-maruku:
-    use_tex: false
-    use_divs: false
-    png_engine: blahtex
-    png_dir: images/latex
-    png_url: /images/latex
-
-redcarpet:
-  extensions: []
-  
-sitemap:
-    file: /sitemap.xml
-    exclude:
-        - /feed/index.xml
-        - /contact/sent.html
-    include_posts:
-        - /index.html
-        - /notebook/index.md
-    change_frequency_name: "change_frequency"
-    priority_name: "priority"

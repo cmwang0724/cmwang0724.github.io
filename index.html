@@ -1,73 +1,20 @@
 ---
-layout: stark
-title: Designer &amp; Developer
-nav-weight: 1
-nav-name: Home
-
-header: '<!-- Contact Validation -->
-		 <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-		 <!--<script type="text/javascript" src="/js/home/flickr.js"></script>-->'
+layout: default
+title: 我的Blog
 ---
-
-<section class="slider">
-				
-	<div class="slide" id="design_and_code">
-		<h2>Design <span class="ampersand">&amp;</span> Code</h2>
-		<p>I'm a web designer <em>and</em> developer in the southwest of England.</p>
-	</div>
-				
-</section><!-- /.slider -->
-			
-<section class="columns-3">
-				
-	<article class="col">
-		<h2>Design</h2>
-		<div class="wrap">
-			<p>Clean and minimal design which puts the content first in a clear way helps to sell a product or brand. By keeping the design simple it appeals to a large audience while making it clear and easy for a user to find their way around the site. </p>
-			<p>When designing I work with: Adobe Photoshop and Illustrator, HTML5 and CSS3, and add interactive features using either vanilla JavaScript or jQuery. I believe responsive design is the future of the web; this provides the largest possible audience with the best possible user experience. </p>
-		</div>
-	</article>
-				
-	<article class="col">
-		<h2>Code</h2>
-		<div class="wrap">
-			<p>All my code is clean, maintainable and object-oriented. This helps to future-proof work so that code is easily expandable, efficent and maintainable. I can work with a number of languages including PHP, Java, C#, and ActionScript 3.</p>
-			<p>I use GIT for version control in all of my projects to ensure that it is easily to collaborate with other developers, experiment with features and control changes. </p>
-		</div>
-	</article>
-				
-	<div class="col">
-		<h2>Writing</h2>
-		<ol>
-			{% for post in site.posts limit: 5 %}
-				{% if forloop.index > 0 %}
-					<li><a href="{{ site.base_url }}{{ post.url }}">{{post.title}}</a> <span>{{ post.date | date: "%d/%m/%Y" }}</span></li>
-				{% endif %}
-			{% endfor %}
-		</ol>
-	</div>
-				
-</section><!-- /.columns-3 -->
-			
-<section class="columns-2 dark" id="flickr">
-				
-	<article class="col">
-		<h2>About</h2>
-		<div class="wrap">
-			<p>I am a Web Applications Development student who is currently studying at Plymouth University, where I am a member of the <a href="http://uopcycling.co.uk" title="University of Plymouth Cycling Club website" target="_blank">University of Plymouth Cycling Club</a>, and <a href="http://termisoc.org" title="University of Plymouth Terminal Society" target="_blank">TermiSoc</a>.</p>
-			<p>During my free time I like to play with bikes, take photos and design websites. You can see details of my <a href="/resume/" title="Daniel Groves Curriculum Vitae">qualifications in my CV</a>. </p>
-		</div>
-	</article>
-	
-	<section class="col" id="flickr_content">
-		<h2>Photography</h2>
-		<ul class="photos">
-			<li><a href="http://www.flickr.com/photos/danielsgroves/8377933124/in/photostream" title="Plymouth fireworks over the Barbian"><img src="/assets/images/home/1.jpg" alt="Plymouth fireworks over the Barbian" /></a></li>
-			<li><a href="http://www.flickr.com/photos/danielsgroves/6806481847/in/photostream" title="A view from the base of Helvellyn"><img src="/assets/images/home/2.jpg" alt="A view from the base of Helvellyn" /></a></li>
-			<li><a href="http://www.flickr.com/photos/danielsgroves/6826108705/in/photostream" title="Simon Humpheries riding Main Line in Cann Woods, Plymouth"><img src="/assets/images/home/3.jpg" alt="Simon Humpheries riding Main Line in Cann Woods, Plymouth" /></a></li>
-			<li><a href="http://www.flickr.com/photos/danielsgroves/6826112525/in/photostream" title="Charlie Sherman riding Badger track in Cann Woods, Plymouth"><img src="/assets/images/home/4.jpg" alt="Charlie Sherman riding Badger track in Cann Woods, Plymouth" /></a></li>
-			<li><a href="http://www.flickr.com/photos/danielsgroves/7088526967/in/photostream" title="Low Bank, Cumbria"><img src="/assets/images/home/5.jpg" alt="Low Bank, Cumbria" /></a></li>
-		</ul>
-	</section>
-				
-</section><!-- /.columns-2 -->
+<h2>{{ page.title }}</h2>
+<p>最新文章</p>
+<ul>
+{% for post in site.posts %}
+    <li>
+    {{ post.date | date_to_string }} 
+    <a href="{{ post.url }}">{{ post.title }}</a>
+    <p>{{ post.excerpt }}</p>
+    </li>
+{% endfor %}
+</ul>
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+  end
+{% endhighlight %}

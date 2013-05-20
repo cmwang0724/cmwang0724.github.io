@@ -1,15 +1,11 @@
-{% include head.html %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+        <title>{{ page.title }}</title>
+    </head>
+    <body>
+        {{ content }}
 
-<section>
-	<div class="title">
-		<h2>{{ page.title }}</h2>
-		<p>{{ page.excerpt }}</p>
-	</div><!-- /.title -->
-	
-	<article class="main">
-		{{ content }}
-	</article>
-</section>
-
-
-{% include footer.html %}
+    </body>
+</html>
