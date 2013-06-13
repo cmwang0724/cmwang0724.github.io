@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>Base · Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/google-code-prettify/prettify.css" rel="stylesheet">
+
+    <!-- gallery css-->
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+      <script src="js/html5shiv.js"></script>
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-146052-10']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+     <style type="text/css">
+        div.gallery img 
+        {
+        	border: solid 1px white;
+        };
+         /* MARKETING CONTENT
+    -------------------------------------------------- */
+
+    /* Center align the text within the three columns below the carousel */
+    #locations{
+        padding-top:40px;
+    }
+
+
+    /* Featurettes
+    ------------------------- */
+
+    .featurette-divider {
+      margin: 80px 0; /* Space out the Bootstrap <hr> more */
+    }
+    .featurette {
+      padding-top: 120px; /* Vertically center images part 1: add padding above and below text. */
+      overflow: hidden; /* Vertically center images part 2: clear their floats. */
+    }
+    .featurette-image {
+      margin-top: -120px; /* Vertically center images part 3: negative margin up the image the same amount of the padding to center it. */
+    }
+
+    /* Give some space on the sides of the floated elements so text doesn't run right into it. */
+    .featurette-image.pull-left {
+      margin-right: 40px;
+    }
+    .featurette-image.pull-right {
+      margin-left: 40px;
+    }
+
+    /* Thin out the marketing headings */
+    .featurette-heading {
+      font-size: 50px;
+      font-weight: 300;
+      line-height: 1;
+      letter-spacing: -1px;
+    }
+    </style>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+   
+    <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <div class="container">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <span class="icon-bar">test1</span>
+                <span class="icon-bar">test2</span>
+                <span class="icon-bar">test3</span>
+              </button>
+              <a class="brand" href="carousel.html">草原灌汤包</a>
+              <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+              <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li><a href="./carousel.html">首页</a></li>
+                  <li><a href="./menu.html">美味菜单</a></li>
+                  <li class="active"><a href="./location.html">餐厅位置</a></li>
+                  <li><a href="./aboutus.html">关于我们</a></li>
+                  <li><a href="#contact">加入我们</a></li>
+                  
+                  <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                  <!--
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">下来菜单 <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li class="divider"></li>
+                      <li class="nav-header">Nav header</li>
+                      <li><a href="#">Separated link</a></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                    </li>
+                  -->
+                </ul>
+              </div><!--/.nav-collapse -->
+            </div>
+        </div><!-- /.navbar-inner -->
+    </div><!-- /.navbar -->
+    
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>饭店风采</h1>
+    <p class="lead">餐厅图片展示</p>
+  </div>
+</header>
+
+    
+    <!-- Docs nav
+    ================================================== -->
+     <div class="container" id="location">
+          <hr class="featurette-divider">
+      <div class="featurette first">
+        <img class="featurette-image pull-right" src="img/feature1.jpg">
+        <h2 class="featurette-heading">草原灌汤包<span class="muted">主店</span></h2>
+        <p class="lead">详细介绍特色详细介绍特色详细介绍特色详细介绍特色详细介绍特色详细介绍特色详细介绍特色详细详细介绍特
+             色详细介绍特色详细介绍特色详细介绍特色详细介绍特色详细介绍特色详细介绍特色详细介绍特色.</p>
+        <p class="lead">联系方式:</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-left" src="img/feature1.jpg">
+        <h2 class="featurette-heading">第一个特色 主标题<span class="muted">副标题..</span></h2>
+        <p class="lead">草原灌汤包就是好吃，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看
+          ，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看
+          ，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看.</p>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="featurette">
+        <img class="featurette-image pull-right" src="img/feature1.jpg">
+        <h2 class="featurette-heading">第一个特色 主标题 <span class="muted">副标题..</span></h2>
+        <p class="lead">草原灌汤包就是好吃，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看
+          ，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看
+          ，元方， 你怎么看，元方， 你怎么看，元方， 你怎么看.</p>
+      </div> 
+    </div>
+   
+     <footer class="footer">
+      <div class="container">
+        <p>草原灌汤包带给你快乐生活，享受餐饮，服务到家，布拉布拉布拉布拉布拉布拉布拉布拉布拉</p>
+        <ul class="footer-links">
+          <li><a href="./about.html" target="_blank">关于</a></li>
+          <li class="muted">·</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open" target="_blank">联系我们</a></li>
+          <li class="muted">·</li>
+          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">加入我们</a></li>
+          <li><a href="http://www.miibeian.gov.cn/" target="_blank">建议</a></li>
+           <li><a href="http://www.miibeian.gov.cn/" target="_blank">新浪微博</a></li>
+           <li><a href="http://www.miibeian.gov.cn/" target="_blank">大众点评</a></li>
+        </ul>
+         <p>&copy; 2013 CaoYuanGuanTangBao Inc. &middot; </p> 
+      </div>
+      </footer> 
+
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder/holder.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/application.js"></script>
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+    
+     </script>
+ 
+  </body>
+</html>

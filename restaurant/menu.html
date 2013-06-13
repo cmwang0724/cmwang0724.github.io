@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="utf-8">
+    <title>Base · Bootstrap</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
+    <link href="css/google-code-prettify/prettify.css" rel="stylesheet">
+    <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <script src="js/html5shiv.js"></script> 
+
+    <script type="text/javascript">
+      var _gaq = _gaq || [];
+      _gaq.push(['_setAccount', 'UA-146052-10']);
+      _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+    </script>
+  </head>
+
+  <body data-spy="scroll" data-target=".bs-docs-sidebar">
+
+    <!-- Navbar
+    ================================================== -->
+   
+    <div class="navbar navbar-inverse navbar-fixed-top">
+          <div class="navbar-inner">
+            <!-- Responsive Navbar Part 1: Button for triggering responsive navbar (not covered in tutorial). Include responsive CSS to utilize. -->
+            <div class="container">
+            <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar">test1</span>
+              <span class="icon-bar">test2</span>
+              <span class="icon-bar">test3</span>
+            </button>
+            <a class="brand" href="carousel.html">草原灌汤包</a>
+            <!-- Responsive Navbar Part 2: Place all navbar contents you want collapsed withing .navbar-collapse.collapse. -->
+            <div class="nav-collapse collapse">
+              <ul class="nav">
+                <li><a href="./carousel.html">首页</a></li>
+                <li class="active"><a href="./menu.html">美味菜单</a></li>
+                <li><a href="./location.html">餐厅位置</a></li>
+                <li><a href="./aboutus.html">关于我们</a></li>
+                <li><a href="#contact">加入我们</a></li>
+                
+                <!-- Read about Bootstrap dropdowns at http://twitter.github.com/bootstrap/javascript.html#dropdowns -->
+                <!--
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown">下来菜单 <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li class="divider"></li>
+                    <li class="nav-header">Nav header</li>
+                    <li><a href="#">Separated link</a></li>
+                    <li><a href="#">One more separated link</a></li>
+                  </ul>
+                  </li>
+                -->
+              </ul>
+            </div><!--/.nav-collapse -->
+          </div><!-- /.navbar-inner -->
+        </div><!-- /.navbar -->
+
+      </div> <!-- /.container -->
+    
+<!-- Subhead
+================================================== -->
+<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>菜单表</h1>
+    <p class="lead">各种你想吃的菜系都有，过来看看吧</p>
+  </div>
+</header>
+
+
+  <div class="container">
+
+    <!-- Docs nav
+    ================================================== -->
+    <div class="row">
+      <div class="span3 bs-docs-sidebar">
+        <ul class="nav nav-list bs-docs-sidenav">
+          <li><a href="#typography"><i class="icon-chevron-right"></i>灌汤包</a></li>
+          <li><a href="#code"><i class="icon-chevron-right"></i>热菜</a></li>
+          <li><a href="#tables"><i class="icon-chevron-right"></i>凉菜</a></li>
+          <li><a href="#forms"><i class="icon-chevron-right"></i>火锅</a></li>
+          <li><a href="#buttons"><i class="icon-chevron-right"></i>麻辣</a></li>
+          <li><a href="#images"><i class="icon-chevron-right"></i>苦的</a></li>
+          <li><a href="#icons"><i class="icon-chevron-right"></i>甜品</a></li>
+        </ul>
+      </div>
+      <div class="span9">
+
+
+
+        <!-- Typography
+        ================================================== -->
+        <section id="typography">
+            <div>
+                <div class="page-header">
+                <h1>灌汤包类别</h1>
+            </div>
+            <p class="lead">驴肉馅的</p>
+            <ul class="thumbnails bootstrap-examples">
+                <li class="span3">
+                    <a class="thumbnail" href="examples/starter-template.html">
+                        <img src="img/menu/1.jpg" alt="">
+                    </a>
+                    <h4>10元一屉</h4>
+                    <p>你会喜欢的.</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/hero.html">
+                         <img src="img/menu/2.jpg" alt="">
+                    </a>
+                    <h4>肌肉馅的</h4>
+                    <p>长肌肉</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/fluid.html">
+                        <img src="img/menu/3.jpg" alt="">
+                     </a>
+                    <h4>猪肉馅的</h4>
+                    <p>小心中标</p>
+                </li>
+
+                <li class="span3">
+                    <a class="thumbnail" href="examples/marketing-narrow.html">
+                        <img src="img/menu/4.jpg" alt="">
+                    </a>
+                    <h4>素的</h4>
+                    <p>我喜欢</p>
+                </li>
+            </ul>
+      </section>
+
+
+
+        <!-- Code
+        ================================================== -->
+        <section id="code">
+              <div>
+                <div class="page-header">
+                <h1>热菜</h1>
+            </div>
+            <p class="lead">驴肉馅的</p>
+            <ul class="thumbnails bootstrap-examples">
+                <li class="span3">
+                    <a class="thumbnail" href="examples/starter-template.html">
+                        <img src="img/menu/1.jpg" alt="">
+                    </a>
+                    <h4>10元一屉</h4>
+                    <p>你会喜欢的.</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/hero.html">
+                         <img src="img/menu/2.jpg" alt="">
+                    </a>
+                    <h4>肌肉馅的</h4>
+                    <p>长肌肉</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/fluid.html">
+                        <img src="img/menu/3.jpg" alt="">
+                     </a>
+                    <h4>猪肉馅的</h4>
+                    <p>小心中标</p>
+                </li>
+
+                <li class="span3">
+                    <a class="thumbnail" href="examples/marketing-narrow.html">
+                        <img src="img/menu/4.jpg" alt="">
+                    </a>
+                    <h4>素的</h4>
+                    <p>我喜欢</p>
+                </li>
+            </ul> 
+        </section>
+
+
+
+        <!-- Tables
+        ================================================== -->
+        <section id="tables">
+            <div>
+                <div class="page-header">
+                <h1>凉菜</h1>
+            </div>
+            <p class="lead">驴肉馅的</p>
+            <ul class="thumbnails bootstrap-examples">
+                <li class="span3">
+                    <a class="thumbnail" href="examples/starter-template.html">
+                        <img src="img/menu/1.jpg" alt="">
+                    </a>
+                    <h4>10元一屉</h4>
+                    <p>你会喜欢的.</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/hero.html">
+                         <img src="img/menu/2.jpg" alt="">
+                    </a>
+                    <h4>肌肉馅的</h4>
+                    <p>长肌肉</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/fluid.html">
+                        <img src="img/menu/3.jpg" alt="">
+                     </a>
+                    <h4>猪肉馅的</h4>
+                    <p>小心中标</p>
+                </li>
+
+                <li class="span3">
+                    <a class="thumbnail" href="examples/marketing-narrow.html">
+                        <img src="img/menu/4.jpg" alt="">
+                    </a>
+                    <h4>素的</h4>
+                    <p>我喜欢</p>
+                </li>
+            </ul>
+        </section>
+
+
+
+        <!-- Forms
+        ================================================== -->
+        <section id="forms">
+            <div>
+                <div class="page-header">
+                <h1>火锅</h1>
+            </div>
+            <p class="lead">驴肉馅的</p>
+            <ul class="thumbnails bootstrap-examples">
+                <li class="span3">
+                    <a class="thumbnail" href="examples/starter-template.html">
+                        <img src="img/menu/1.jpg" alt="">
+                    </a>
+                    <h4>10元一屉</h4>
+                    <p>你会喜欢的.</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/hero.html">
+                         <img src="img/menu/2.jpg" alt="">
+                    </a>
+                    <h4>肌肉馅的</h4>
+                    <p>长肌肉</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/fluid.html">
+                        <img src="img/menu/3.jpg" alt="">
+                     </a>
+                    <h4>猪肉馅的</h4>
+                    <p>小心中标</p>
+                </li>
+
+                <li class="span3">
+                    <a class="thumbnail" href="examples/marketing-narrow.html">
+                        <img src="img/menu/4.jpg" alt="">
+                    </a>
+                    <h4>素的</h4>
+                    <p>我喜欢</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Buttons
+        ================================================== -->
+        <section id="buttons">
+            <div>
+                <div class="page-header">
+                <h1>麻辣</h1>
+            </div>
+            <p class="lead">驴肉馅的</p>
+            <ul class="thumbnails bootstrap-examples">
+                <li class="span3">
+                    <a class="thumbnail" href="examples/starter-template.html">
+                        <img src="img/menu/1.jpg" alt="">
+                    </a>
+                    <h4>10元一屉</h4>
+                    <p>你会喜欢的.</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/hero.html">
+                         <img src="img/menu/2.jpg" alt="">
+                    </a>
+                    <h4>肌肉馅的</h4>
+                    <p>长肌肉</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/fluid.html">
+                        <img src="img/menu/3.jpg" alt="">
+                     </a>
+                    <h4>猪肉馅的</h4>
+                    <p>小心中标</p>
+                </li>
+
+                <li class="span3">
+                    <a class="thumbnail" href="examples/marketing-narrow.html">
+                        <img src="img/menu/4.jpg" alt="">
+                    </a>
+                    <h4>素的</h4>
+                    <p>我喜欢</p>
+                </li>
+            </ul>
+        </section>
+
+
+
+        <!-- Images
+        ================================================== -->
+        <section id="images">
+            <div>
+                <div class="page-header">
+                <h1>灌汤包类别</h1>
+            </div>
+            <p class="lead">驴肉馅的</p>
+            <ul class="thumbnails bootstrap-examples">
+                <li class="span3">
+                    <a class="thumbnail" href="examples/starter-template.html">
+                        <img src="img/menu/1.jpg" alt="">
+                    </a>
+                    <h4>10元一屉</h4>
+                    <p>你会喜欢的.</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/hero.html">
+                         <img src="img/menu/2.jpg" alt="">
+                    </a>
+                    <h4>肌肉馅的</h4>
+                    <p>长肌肉</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/fluid.html">
+                        <img src="img/menu/3.jpg" alt="">
+                     </a>
+                    <h4>猪肉馅的</h4>
+                    <p>小心中标</p>
+                </li>
+
+                <li class="span3">
+                    <a class="thumbnail" href="examples/marketing-narrow.html">
+                        <img src="img/menu/4.jpg" alt="">
+                    </a>
+                    <h4>素的</h4>
+                    <p>我喜欢</p>
+                </li>
+            </ul>
+        </section>
+
+
+
+        <!-- Icons
+        ================================================== -->
+        <section id="icons">
+            <div>
+                <div class="page-header">
+                <h1>甜的</h1>
+            </div>
+            <p class="lead">驴肉馅的</p>
+            <ul class="thumbnails bootstrap-examples">
+                <li class="span3">
+                    <a class="thumbnail" href="examples/starter-template.html">
+                        <img src="img/menu/1.jpg" alt="">
+                    </a>
+                    <h4>10元一屉</h4>
+                    <p>你会喜欢的.</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/hero.html">
+                         <img src="img/menu/2.jpg" alt="">
+                    </a>
+                    <h4>肌肉馅的</h4>
+                    <p>长肌肉</p>
+                </li>
+                <li class="span3">
+                    <a class="thumbnail" href="examples/fluid.html">
+                        <img src="img/menu/3.jpg" alt="">
+                     </a>
+                    <h4>猪肉馅的</h4>
+                    <p>小心中标</p>
+                </li>
+
+                <li class="span3">
+                    <a class="thumbnail" href="examples/marketing-narrow.html">
+                        <img src="img/menu/4.jpg" alt="">
+                    </a>
+                    <h4>素的</h4>
+                    <p>我喜欢</p>
+                </li>
+            </ul>
+        </section>
+      </div>
+    </div>
+
+  </div>
+
+     <footer class="footer">
+      <div class="container">
+        <p>草原灌汤包带给你快乐生活，享受餐饮，服务到家，布拉布拉布拉布拉布拉布拉布拉布拉布拉</p>
+        <ul class="footer-links">
+          <li><a href="./about.html" target="_blank">关于</a></li>
+          <li class="muted">·</li>
+          <li><a href="https://github.com/twitter/bootstrap/issues?state=open" target="_blank">联系我们</a></li>
+          <li class="muted">·</li>
+          <li><a href="https://github.com/twitter/bootstrap/blob/master/CHANGELOG.md">加入我们</a></li>
+          <li><a href="http://www.miibeian.gov.cn/" target="_blank">建议</a></li>
+           <li><a href="http://www.miibeian.gov.cn/" target="_blank">新浪微博</a></li>
+           <li><a href="http://www.miibeian.gov.cn/" target="_blank">大众点评</a></li>
+        </ul>
+         <p>&copy; 2013 CaoYuanGuanTangBao Inc. &middot; </p> 
+      </div>
+    </footer> 
+
+    
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="js/jquery-1.9.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/holder/holder.js"></script>
+    <script src="js/google-code-prettify/prettify.js"></script>
+    <script src="js/application.js"></script>
+    <script src="js/jquery.scrollup.min.js"></script> 
+    <script>
+      !function ($) {
+        $(function(){
+          // carousel demo
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+
+
+    $(document).ready(function(){
+        $.scrollUp({
+              scrollName: 'scrollUp', // Element ID
+              topDistance: '300', // Distance from top before showing element (px)
+              topSpeed: 300, // Speed back to top (ms)
+              animation: 'fade', // Fade, slide, none
+              animationInSpeed: 200, // Animation in speed (ms)
+              animationOutSpeed: 200, // Animation out speed (ms)
+              scrollText: '', // Text for element
+              activeOverlay: false  // Set CSS color to display scrollUp active point, e.g '#00FFFF'
+        });
+    });    
+     </script>
+ 
+    <a id="scrollUp" href="#top" title="" style="position: fixed; z-index: 2147483647;"></a>
+  </body>
+</html>
